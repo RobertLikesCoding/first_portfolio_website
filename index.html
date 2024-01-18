@@ -10,9 +10,9 @@
 </head>
 <body>
     <header>
-        <nav>
-            <h1 id="logo">Robert Likes Coding</h1>
-            <ul>
+        <h1 id="logo"><a href='/index.html'>Robert Likes Coding</h1>
+        <nav class="navbar">
+            <ul class="navlist">
                 <li><a href='#'>About Me</a></li>
                 <li><a href='#'>Skills</a></li>
                 <li><a href='#'>Projects</a></li>
@@ -23,50 +23,68 @@
     <body>
         <main>
             <section id="aboutMe">
-                <img src="ressources/RobertProfile.jpeg" alt="picture of Robert">
-                <div>
-                    <h2>About Me</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </section>
-            <section id="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li><img src="ressources/icons/icons8-html5-white.svg" alt="html logo"></li>
-                    <li><img src="ressources/icons/icons8-css3-white.svg" alt="css logo"></li>
-                    <li><img src="ressources/icons/icons8-javascript-white.svg" alt="js logo"></li>
-                    <li><img src="ressources/icons/icons8-figma.svg" alt="figma logo"></li>
-                    <li><img src="ressources/icons/icons8-git-white.svg" alt="git logo"></li>
-                    <li><img src="ressources/icons/icons8-github.svg" alt="github logo"></li>
-                    <li><img src="ressources/icons/icons8-react-24.png" alt="react logo"></li>
-                    <li><img src="ressources/icons/icons8-ruby-programming-language-white.svg" alt="ruby logo"></li>
-                </ul>
-            </section>
-            <section id="projects">
-                <h2>Projects</h2>
-                <div>
-                    <h3>Project Name</h3>
-                    <ul>
-                        <li><img src="ressources/icons/icons8-html5-white.svg" alt="html logo"></li>
-                        <li><img src="ressources/icons/icons8-css3-white.svg" alt="css logo"></li>
-                        <li><img src="ressources/icons/icons8-javascript-white.svg" alt="js logo"></li>
-                    </ul>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, aperiam.</p>
+                <div id="aboutCard">
+                    <div id="headingAlign">
+                        <!-- <h2>About Me</h2> -->
+                        <img id="profilePic" src="ressources/RobertProfile.jpeg" alt="picture of Robert">
+                    </div>
+                    <div class="aboutText">
+                        <h3>Hi, my name is Robert!</h3>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
             </section>
-            <section id="contact">
-                <h2>Contact</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, aperiam.</p>
-                <ul>
-                    <li><img src="ressources/icons/icons8-email-32.png" alt="email logo"></li>
-                    <li><img src="ressources/icons/icons8-github.svg" alt="github logo"></li>
-                    <li><img src="ressources/icons/icons8-linkedin.svg" alt="linkedin logo"></li>
-                </ul>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="icons">
+                    <ul class="skillsIcons">
+                        <li><img src="ressources/icons/icons8-html5-white.svg" alt="html logo"></li>
+                        <li><img src="ressources/icons/icons8-css3-white.svg" alt="css logo"></li>
+                        <li><img src="ressources/icons/icons8-javascript-white.svg" alt="js logo"></li>
+                        <li><img src="ressources/icons/icons8-figma.svg" alt="figma logo"></li>
+                        <li><img src="ressources/icons/icons8-git-white.svg" alt="git logo"></li>
+                        <li><img src="ressources/icons/icons8-github.svg" alt="github logo"></li>
+                        <li><img src="ressources/icons/icons8-react-native.svg" alt="react logo"></li>
+                        <li><img src="ressources/icons/icons8-ruby-programming-language-white.svg" alt="ruby logo"></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="projectCards">
+                    <div class="projectHeader">
+                        <h3>Responsive Website</h3>
+                        <br>
+                        <p>Skills used:</p>
+                        <ul class="projectList">
+                            <li><img src="ressources/icons/icons8-html5-white.svg" alt="html logo"></li>
+                            <li><img src="ressources/icons/icons8-css3-white.svg" alt="css logo"></li>
+                        </ul>
+                    </div>
+                    <div id="projectDetails">
+                        <p>This is the first project I did.</p>
+                        <br>
+                        <a id="projectLink" href="https://github.com">View Project</a>
+                    </div>
+                </div>
             </section>
         </main>
+
         <footer>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p><a href="mailto:9V4oB@example.com"><img src="ressources/icons/icons8-mail-50.png" alt="email logo">name@email.com</a></p>
+                <p><img src="ressources/icons/icons8-phone-50.png" alt="phone logo">(+49)17612345678</p>
+                <div class="socials">
+                    <ul>
+                        <li><img src="ressources/icons/icons8-github.svg" alt="github logo"></li>
+                        <li><img src="ressources/icons/icons8-linkedin.svg" alt="linkedin logo"></li>
+                    </ul>
+                </div>
+            </section>
             <p>&copy; 2022 Robert Likes Coding</p>
         </footer>
     </body>
