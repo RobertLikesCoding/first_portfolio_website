@@ -34,42 +34,22 @@
                     </div>
                 </div>
             </section>
+            <h2>Skills</h2>
                 <section id="skills">
-                    <h2>Skills</h2>
                     <div class="icons">
                         <ul class="skillsIcons">
-                            <li><img src="ressources/icons/icons8-html5-white.svg" alt="html logo"></li>
-                            <li><img src="ressources/icons/icons8-css3-white.svg" alt="css logo"></li>
-                            <li><img src="ressources/icons/icons8-javascript-white.svg" alt="js logo"></li>
-                            <li><img src="ressources/icons/icons8-figma.svg" alt="figma logo"></li>
-                            <li><img src="ressources/icons/icons8-git-white.svg" alt="git logo"></li>
-                            <li><img src="ressources/icons/icons8-github.svg" alt="github logo"></li>
-                            <li><img src="ressources/icons/icons8-react-native.svg" alt="react logo"></li>
-                            <li><img src="ressources/icons/icons8-ruby-programming-language-white.svg" alt="ruby logo"></li>
+                            <li><img src="ressources/icons/icons8-html5-white.svg" alt="html logo" title="HTML"></li>
+                            <li><img src="ressources/icons/icons8-css3-white.svg" alt="css logo" title="CSS"></li>
+                            <li><img src="ressources/icons/icons8-javascript-white.svg" alt="js logo" title="JavaScript"></li>
+                            <li><img src="ressources/icons/icons8-figma.svg" alt="figma logo" title="Figma"></li>
+                            <li><img src="ressources/icons/icons8-git-white.svg" alt="git logo" title="Git"></li>
+                            <li><img src="ressources/icons/icons8-github.svg" alt="github logo" title="GitHub"></li>
+                            <li><img src="ressources/icons/icons8-react-native.svg" alt="react logo" title="React"></li>
+                            <li><img src="ressources/icons/icons8-ruby-programming-language-white.svg" alt="ruby logo" title="Ruby"></li>
                         </ul>
                     </div>
                 </section>
     
-                <!-- <h2>Projects</h2>
-                <section id="projects">
-                    <div class="projectCards">
-                        <div class="projectName">
-                            <h3>Responsive Website</h3>
-                            <br>
-                            <p>Skills used:</p>
-                            <ul class="projectList">
-                                <li><img src="ressources/icons/icons8-html5-white.svg" alt="html logo"></li>
-                                <li><img src="ressources/icons/icons8-css3-white.svg" alt="css logo"></li>
-                            </ul>
-                        </div>
-                        <div id="projectDetails">
-                            <p>This is the first project I did.</p>
-                            <br>
-                            <a id="projectLink" href="https://github.com">View Project</a>
-                        </div>
-                        <div id="projectImg"><img src="ressources/Bildschirmfoto vom 2024-01-18 21-44-43.jpg" alt="screenshot of project"></div>
-                    </div>
-                </section> -->
                 <h2>Projects</h2>
                 <section id="projects">
                     <div class="projectCards">
@@ -79,22 +59,43 @@
                         <div class="projectDetails">
                             <h3>Building a Responsive Website</h3>
                             <p>This was my first website project assignment on Codecademy. The goal was to build a simple club website with responsive design.</p>
-                            <p><em>Skills used: HTML5, CSS3</em></p>
+                            <div class="skillBubbles">
+                                <em>Skills used:</em>
+                                <p>HTML</p>
+                                <p>CSS</p>
+                            </div>
                         </div>
                     </div>
                 </section>
         </main>
 
         <footer>
+            <h2>Contact</h2>
             <section id="contact">
-                <h2>Contact</h2>
-                <p><a href="mailto:9V4oB@example.com"><img src="ressources/icons/icons8-mail-50.png" alt="email logo">name@email.com</a></p>
-                <p><img src="ressources/icons/icons8-phone-50.png" alt="phone logo">(+49)17612345678</p>
-                <div class="socials">
-                    <ul>
-                        <li><img src="ressources/icons/icons8-github.svg" alt="github logo"></li>
-                        <li><img src="ressources/icons/icons8-linkedin.svg" alt="linkedin logo"></li>
-                    </ul>
+                <div >
+                    <form class="contactForm">
+                        <label for="name" class="formLabel">Name:</label>
+                        <input type="text" id="name" class="formInput">
+                        <label for="email" class="formLabel">E-Mail:</label>
+                        <input type="email" id="email" class="formInput" required>
+                        <label for="message" class="formLabel">Message:</label>
+                        <textarea id="message" class="formInput">
+                        </textarea>
+                        <label for="submit" class="formButton"></label>
+                        <input class="submitButton" type="submit" value="Submit">
+                    </form>
+                </div>
+                <div class="contactInfo">
+                    <img src="ressources/icons/icons8-mail-50.png" alt="email logo">
+                    <p><a href="mailto:9V4oB@example.com">name@email.com</a></p>
+                    <img src="ressources/icons/icons8-phone-50.png" alt="phone logo">
+                    <p>(+49)17612345678</p>
+                    <div class="socials">
+                        <ul class="skillsIcons">
+                            <li><img src="ressources/icons/icons8-github.svg" alt="github logo"></li>
+                            <li><img src="ressources/icons/icons8-linkedin.svg" alt="linkedin logo"></li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <p>&copy; 2022 Robert Likes Coding</p>
