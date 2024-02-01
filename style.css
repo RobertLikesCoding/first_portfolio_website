@@ -25,16 +25,18 @@ header {
     text-decoration: none;
     padding: 1rem 0;
     border-bottom: 2px dotted #7743DB;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
 
 #logo {
-    padding: 0 0 0 4rem;
+    padding: 0 2rem 0 2rem;
+    text-decoration: none;
 }
 
 .navlist {
-    display: inline-flex;
-    margin: 0 4rem 0 0;
+    display: flex;
+    margin: 0 2rem 0 0;
     gap: 1.5rem;
 }
 
@@ -44,14 +46,15 @@ li {
 
 h2 {
     text-decoration: dotted underline 2px #000000;
-    padding: 2rem 0 1rem 0;
+    padding: 2rem 0 2rem 0;
     text-align: center;
-    background-color: #C3ACD0;
 }
 
 section {
-    padding: 2rem 4rem;
-
+    padding: 0 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ABOUT ME SECTION */
@@ -63,8 +66,8 @@ section {
 #aboutCard {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
+    margin: 2rem 0 4rem 0;
 }
 
 #aboutCard > * {
@@ -77,11 +80,12 @@ section {
     max-width: 400px;
     border-radius: 0 50% 50% 50%;
     box-shadow: #676568b4 10px 10px 10px;
-    margin: 2rem 0;
+    margin-bottom: 2rem;;
 }
 
 .aboutText {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 2rem;
 }
@@ -90,11 +94,14 @@ section {
 
 #skills {
   background-color: #C3ACD0;
+  display: flex;
+  flex-direction: column;
 }
 
 .icons {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  height: 10rem;
 }
 
 .skillsIcons {
@@ -110,6 +117,7 @@ section {
     display: flex;
     flex-direction: column;
     background-color: #C3ACD0;
+    padding: 0 0 2rem 0;
 }
 
 .projectCard {
@@ -118,7 +126,8 @@ section {
     gap: 1rem;
     flex-wrap: wrap;
     border-radius: 10px;
-    margin: 1.5rem auto;
+    margin: 1rem auto;
+    padding: 1rem;
     max-width: none;
     box-shadow: 10px 10px 10px #67656844;
     background-color: #FFFBF5;
@@ -138,7 +147,6 @@ section {
 
 .card-img img {
     object-fit: cover;
-    border-radius: 10px;
     /*     border: 2px solid rgb(180, 180, 180); */
     height: 200px;
 }
@@ -149,7 +157,6 @@ section {
     justify-content: center;
     gap: 1rem;
     max-width: 500px;
-    text-wrap:pretty;
 }
 
 .skillBubbles {
@@ -166,7 +173,7 @@ section {
 }
 
 footer {
-    background-color: #C3ACD0;
+  background-color: #FFFBF5;
 }
 
 #contact {
@@ -189,9 +196,10 @@ footer {
 input[type=text], input[type=email], textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #C3ACD0;
     border-radius: 5px;
     box-sizing: border-box;
+    box-shadow: 2px 2px 5px #67656844;
     resize: vertical;
 }
 
@@ -208,6 +216,7 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
     float: right;
+    margin: 1rem 0;
   }
 
   input[type=submit]:active {
