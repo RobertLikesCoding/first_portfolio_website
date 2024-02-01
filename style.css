@@ -46,22 +46,24 @@ h2 {
     text-decoration: dotted underline 2px #000000;
     padding: 2rem 0 1rem 0;
     text-align: center;
+    background-color: #C3ACD0;
 }
 
 section {
     padding: 2rem 4rem;
+
 }
 
 /* ABOUT ME SECTION */
 
 #aboutMe {
-    background-color: #C3ACD0;
+    background-color: #FFFBF5;
 }
 
 #aboutCard {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -72,9 +74,10 @@ section {
 }
 
 #profilePic {
-    max-width: 500px;
+    max-width: 400px;
     border-radius: 0 50% 50% 50%;
     box-shadow: #676568b4 10px 10px 10px;
+    margin: 2rem 0;
 }
 
 .aboutText {
@@ -85,50 +88,59 @@ section {
 
 /* SKILLS SECTION */
 
+#skills {
+  background-color: #C3ACD0;
+}
+
 .icons {
     display: flex;
     justify-content: center;
 }
 
 .skillsIcons {
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
 }
 
-/* alt version PROJECTS Cards */
+/* PROJECTS SECTION */
 
 #projects {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    background-color: #C3ACD0;
 }
 
-.projectCards {
+.projectCard {
     display: flex;
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
     border-radius: 10px;
-    padding: 1rem;
+    margin: 1.5rem auto;
+    max-width: none;
+    box-shadow: 10px 10px 10px #67656844;
+    background-color: #FFFBF5;
 }
 
-.projectCards:hover {
-    box-shadow: 10px 10px 10px #67656844;
+.projectCard:hover {
+
     transition: 0.5s;
     transform: scale(1.05);
     border: 1px solid rgb(202, 202, 202);
 }
 
 .card-img {
-    border-radius: 10px;
     display: flex;
     justify-content: center;
 }
 
 .card-img img {
     object-fit: cover;
-    border-radius: 5px;
-    border: 2px solid grey;
+    border-radius: 10px;
+    /*     border: 2px solid rgb(180, 180, 180); */
+    height: 200px;
 }
 
 .projectDetails {
@@ -137,11 +149,12 @@ section {
     justify-content: center;
     gap: 1rem;
     max-width: 500px;
+    text-wrap:pretty;
 }
 
 .skillBubbles {
     display: flex;
-    gap: 1em;;
+    gap: 0.5em;;
     align-items: center;
 }
 
@@ -152,16 +165,71 @@ section {
     color: white;
 }
 
+footer {
+    background-color: #C3ACD0;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .contactForm {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin: 0 auto 3rem auto;
+    gap: 0.25rem;
+    width: 100%;
 }
 
+
+/* FORM STYLING */
+
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #7743DB;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+  input[type=submit]:active {
+    background-color: rgb(65, 0, 102);
+  }
+
+  .skillsIcons > li:hover {
+    transition: 0.5s;
+    transform: scale(1.25);
+}
+
+/* FOOTER */
+
 .contactInfo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;;
+}
+
+#mail:hover {
+  text-decoration: underline;
 }

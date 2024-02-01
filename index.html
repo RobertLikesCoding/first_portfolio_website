@@ -33,7 +33,7 @@
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem ex maiores nostrum, ullam inventore dicta sapiente aut accusamus unde quae reiciendis, rem ducimus tenetur! Reprehenderit at aut perferendis repudiandae aperiam.</p>
                     </div>
                 </div>
-            </section>
+            </section id="skills">
             <h2>Skills</h2>
                 <section id="skills">
                     <div class="icons">
@@ -49,20 +49,49 @@
                         </ul>
                     </div>
                 </section>
-    
+
                 <h2>Projects</h2>
                 <section id="projects">
-                    <div class="projectCards">
+                    <div class="projectCard">
                         <div class="card-img">
-                            <img src="ressources/Screenshot_Responisve.jpg" alt="screenshot of project">
+                            <img src="ressources/Screenshot_ResponsiveClub1.png" alt="screenshot of project">
                         </div>
                         <div class="projectDetails">
-                            <h3>Building a Responsive Website</h3>
-                            <p>This was my first website project assignment on Codecademy. The goal was to build a simple club website with responsive design.</p>
+                            <h3>Building a responsive website</h3>
+                            <p>This was my second website project assignment on Codecademy. The goal was to build a simple club website with responsive design.</p>
                             <div class="skillBubbles">
                                 <em>Skills used:</em>
                                 <p>HTML</p>
                                 <p>CSS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projectCard">
+                        <div class="card-img">
+                            <img src="ressources/Screenshot_StaticCompany1.png" alt="screenshot of project">
+                        </div>
+                        <div class="projectDetails">
+                            <h3>Building a static website</h3>
+                            <p>This was my first website project assignment on Codecademy. The goal was to create a static website for a imaginary company.</p>
+                            <div class="skillBubbles">
+                                <em>Skills used:</em>
+                                <p>HTML</p>
+                                <p>CSS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projectCard">
+                        <div class="card-img">
+                            <img src="ressources/Screenshot_PokemonCreator.png" alt="screenshot of project">
+                        </div>
+                        <div class="projectDetails">
+                            <h3>Pokemon Creator</h3>
+                            <p>This was my first website project assignment on Codecademy. The goal was to build a simple club website with responsive design.</p>
+                            <div class="skillBubbles">
+                                <em>Skills used:</em>
+                                <p>Javascript</p>
+                                <p>Git</p>
+                                <p>GitHub</p>
                             </div>
                         </div>
                     </div>
@@ -72,33 +101,51 @@
         <footer>
             <h2>Contact</h2>
             <section id="contact">
-                <div >
+                <div class="formContainer">
                     <form class="contactForm">
-                        <label for="name" class="formLabel">Name:</label>
-                        <input type="text" id="name" class="formInput">
-                        <label for="email" class="formLabel">E-Mail:</label>
-                        <input type="email" id="email" class="formInput" required>
-                        <label for="message" class="formLabel">Message:</label>
-                        <textarea id="message" class="formInput">
-                        </textarea>
-                        <label for="submit" class="formButton"></label>
-                        <input class="submitButton" type="submit" value="Submit">
+                        <div class="row">
+                            <div class=""col-25>
+                                <label for="name" class="formLabel">Name:</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="name" class="formInput">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class=""col-25>
+                                <label for="email" class="formLabel">Email:</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="email" id="email" class="formInput">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class=""col-25>
+                                <label for="message" class="formInput">Message:</label>
+                            </div>
+                            <div class="col-75">
+                                <textarea type="text" id="name" class="formInput" cols="60" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <input type="submit" value="Submit">
+                        </div>
                     </form>
                 </div>
                 <div class="contactInfo">
                     <img src="ressources/icons/icons8-mail-50.png" alt="email logo">
-                    <p><a href="mailto:9V4oB@example.com">name@email.com</a></p>
+                    <p><a id="mail" href="mailto:9V4oB@example.com">name@email.com</a></p>
                     <img src="ressources/icons/icons8-phone-50.png" alt="phone logo">
                     <p>(+49)17612345678</p>
                     <div class="socials">
                         <ul class="skillsIcons">
-                            <li><img src="ressources/icons/icons8-github.svg" alt="github logo"></li>
-                            <li><img src="ressources/icons/icons8-linkedin.svg" alt="linkedin logo"></li>
+                            <li><a href="https://www.linkedin.com/in/robertbaufeld/"><img src="ressources/icons/icons8-github.svg" alt="github logo"></a></li>
+                            <li><a href="https://github.com/RobertLikesCoding/"><img src="ressources/icons/icons8-linkedin.svg" alt="linkedin logo"></a></li>
                         </ul>
                     </div>
                 </div>
+                <p #copyright>&copy; 2022 Robert Likes Coding</p>
             </section>
-            <p>&copy; 2022 Robert Likes Coding</p>
         </footer>
     </body>
 </body>
