@@ -1,4 +1,20 @@
 /* CSS Reset */
+:root {
+  --clr-background: #FFFBF5;
+  --clr-foreground: #C3ACD0;
+  --clr-bubbles: #7843db;
+  --clr-txt: rgb(0, 0, 0);
+  --clr-form: white;
+}
+
+.darkmode {
+  --clr-background: rgb(6, 18, 43);
+  --clr-foreground: #000000;
+  --clr-bubbles: #77531c;
+  --clr-txt: #fdc26a;
+  --clr-form: #C3ACD0;
+
+}
 
 * {
     margin: 0;
@@ -6,25 +22,29 @@
     font-family: "Open Sans", sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6, p, em {
+  color: var(--clr-txt)
+}
+
 body {
-    background-color: #FFFBF5;
+    background-color: var(--clr-background);
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--clr-txt);
 }
 
 /* NAVBAR */
 
 header {
-    background-color: #FFFBF5;
+    background-color: var(--clr-background);
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
     padding: 1rem 0;
-    border-bottom: 2px dotted #7743DB;
+    border-bottom: 2px dashed var(--clr-foreground);
     margin-bottom: 2rem;
     flex-wrap: wrap;
 }
@@ -38,14 +58,21 @@ header {
     display: flex;
     margin: 0 2rem 0 0;
     gap: 1.5rem;
+    align-items: center;
 }
 
 li {
     list-style: none;
 }
 
+svg {
+  fill: var(--clr-txt);
+  height: 1.25rem;
+  width: auto;
+}
+
 h2 {
-    text-decoration: dotted underline 2px #000000;
+    text-decoration: dashed underline 2px var(--clr-txt);
     padding: 2rem 0 2rem 0;
     text-align: center;
 }
@@ -60,7 +87,7 @@ section {
 /* ABOUT ME SECTION */
 
 #aboutMe {
-    background-color: #FFFBF5;
+    background-color: var(--clr-background);
 }
 
 #aboutCard {
@@ -93,7 +120,7 @@ section {
 /* SKILLS SECTION */
 
 #skills {
-  background-color: #C3ACD0;
+  background-color: var(--clr-foreground);
   display: flex;
   flex-direction: column;
 }
@@ -109,6 +136,11 @@ section {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
+    color: var(--clr-txt);
+}
+
+li > svg {
+  height: 3rem;
 }
 
 /* PROJECTS SECTION */
@@ -116,7 +148,7 @@ section {
 #projects {
     display: flex;
     flex-direction: column;
-    background-color: #C3ACD0;
+    background-color: var(--clr-foreground);
     padding: 0 0 2rem 0;
 }
 
@@ -129,15 +161,14 @@ section {
     margin: 1rem auto;
     padding: 1rem;
     max-width: none;
-    box-shadow: 10px 10px 10px #67656844;
-    background-color: #FFFBF5;
+    box-shadow: 10px 10px 10px #302d3144;
+    background-color: var(--clr-background);
 }
 
 .projectCard:hover {
 
     transition: 0.5s;
     transform: scale(1.05);
-    border: 1px solid rgb(202, 202, 202);
 }
 
 .card-img {
@@ -166,14 +197,14 @@ section {
 }
 
 .skillBubbles p {
-    background-color: #7843db;
+    background-color: var(--clr-bubbles);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     color: white;
 }
 
 footer {
-  background-color: #FFFBF5;
+  background-color: var(--clr-background);
 }
 
 #contact {
@@ -196,20 +227,22 @@ footer {
 input[type=text], input[type=email], textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #C3ACD0;
+    border: 1px solid var(--clr-foreground);
     border-radius: 5px;
     box-sizing: border-box;
     box-shadow: 2px 2px 5px #67656844;
     resize: vertical;
-}
+    background-color: var(--clr-form);
+  }
 
-label {
+  label {
+    color: var(--clr-txt);
     padding: 12px 12px 12px 0;
     display: inline-block;
 }
 
 input[type=submit] {
-    background-color: #7743DB;
+    background-color: var(--clr-bubbles);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -235,8 +268,12 @@ input[type=submit] {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
   margin-bottom: 2rem;;
+}
+
+.contactInfo > img, svg {
+  height: 2rem;
 }
 
 #mail:hover {
