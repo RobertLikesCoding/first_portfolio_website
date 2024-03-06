@@ -1,25 +1,25 @@
 /* CSS Reset */
 :root {
-  --clr-background: #FFFBF5;
-  --clr-foreground: #C3ACD0;
-  --clr-bubbles: #7843db;
-  --clr-txt: rgb(0, 0, 0);
+  --clr-background: #fcedd7;
+  --clr-foreground: #ffffff;
+  --clr-bubbles: #4773ad;
+  --clr-txt: #034aa7;
   --clr-form: white;
 }
 
 .darkmode {
-  --clr-background: rgb(6, 18, 43);
-  --clr-foreground: #000000;
-  --clr-bubbles: #77531c;
-  --clr-txt: #fdc26a;
-  --clr-form: #C3ACD0;
+  --clr-background: #1a1b1f;
+  --clr-foreground: #1d323a;
+  --clr-bubbles: #275d72;
+  --clr-txt: #fcedd7;
+  --clr-form: #fcedd7;
 
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Courier New",Courier,monospace;
 }
 
 h1, h2, h3, h4, h5, h6, p, em {
@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6, p, em {
 
 body {
     background-color: var(--clr-background);
+    margin: 0 1rem 0 1rem;
 }
 
 a {
@@ -43,8 +44,9 @@ header {
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
-    padding: 1rem 0;
-    border-bottom: 2px dashed var(--clr-foreground);
+    gap: 1rem;
+    padding: 2rem 0;
+    border-bottom: 2px dashed var(--clr-txt);
     margin-bottom: 2rem;
     flex-wrap: wrap;
 }
@@ -59,13 +61,14 @@ header {
     margin: 0 2rem 0 0;
     gap: 1.5rem;
     align-items: center;
-}
+    flex-wrap: wrap;
+  }
 
-li {
+  li {
     list-style: none;
 }
 
-svg {
+#darkmoon {
   fill: var(--clr-txt);
   height: 1.25rem;
   width: auto;
@@ -74,7 +77,6 @@ svg {
 h2 {
     text-decoration: dashed underline 2px var(--clr-txt);
     padding: 2rem 0 2rem 0;
-    text-align: center;
 }
 
 section {
@@ -86,28 +88,23 @@ section {
 
 /* ABOUT ME SECTION */
 
-#aboutMe {
-    background-color: var(--clr-background);
-}
-
 #aboutCard {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    gap: 2rem;
     margin: 2rem 0 4rem 0;
 }
 
 #aboutCard > * {
     flex: 1;
     max-width: 500px;
-
 }
 
 #profilePic {
     max-width: 400px;
     border-radius: 0 50% 50% 50%;
-    box-shadow: #676568b4 10px 10px 10px;
-    margin-bottom: 2rem;;
+    box-shadow: #0000007e 10px 10px 10px;
 }
 
 .aboutText {
@@ -120,9 +117,20 @@ section {
 /* SKILLS SECTION */
 
 #skills {
-  background-color: var(--clr-foreground);
+  background-color: var(--clr-background);
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+}
+
+#skills > * {
+  flex: 1;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-decoration: dashed underline 2px var(--clr-txt);
+  padding: 1rem 0 1rem 0;
 }
 
 .icons {
@@ -132,24 +140,25 @@ section {
 }
 
 .skillsIcons {
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    color: var(--clr-txt);
-}
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  fill: var(--clr-txt);
+  }
 
-li > svg {
-  height: 3rem;
-}
+  li > svg {
+    height: 3rem;
+  }
 
 /* PROJECTS SECTION */
 
 #projects {
     display: flex;
     flex-direction: column;
-    background-color: var(--clr-foreground);
-    padding: 0 0 2rem 0;
+    background-color: var(--clr-background);
+    padding: 2rem 0 2rem 0;
 }
 
 .projectCard {
@@ -162,7 +171,7 @@ li > svg {
     padding: 1rem;
     max-width: none;
     box-shadow: 10px 10px 10px #302d3144;
-    background-color: var(--clr-background);
+    background-color: var(--clr-foreground);
 }
 
 .projectCard:hover {
@@ -178,7 +187,6 @@ li > svg {
 
 .card-img img {
     object-fit: cover;
-    /*     border: 2px solid rgb(180, 180, 180); */
     height: 200px;
 }
 
@@ -203,30 +211,27 @@ li > svg {
     color: white;
 }
 
-footer {
-  background-color: var(--clr-background);
-}
+/*  FOOTER   */
 
 #contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contactForm {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto 3rem auto;
-    gap: 0.25rem;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 3rem auto;
+  gap: 0.25rem;
+  width: 100%;
 }
-
 
 /* FORM STYLING */
 
 input[type=text], input[type=email], textarea {
     width: 100%;
-    padding: 12px;
+    padding: 1rem;
     border: 1px solid var(--clr-foreground);
     border-radius: 5px;
     box-sizing: border-box;
@@ -237,14 +242,14 @@ input[type=text], input[type=email], textarea {
 
   label {
     color: var(--clr-txt);
-    padding: 12px 12px 12px 0;
+    padding: 1rem 1rem 1rem 0;
     display: inline-block;
 }
 
 input[type=submit] {
     background-color: var(--clr-bubbles);
     color: white;
-    padding: 12px 20px;
+    padding: 1rem 1.3rem;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -253,7 +258,7 @@ input[type=submit] {
   }
 
   input[type=submit]:active {
-    background-color: rgb(65, 0, 102);
+    background-color: var(--clr-background);
   }
 
   .skillsIcons > li:hover {
