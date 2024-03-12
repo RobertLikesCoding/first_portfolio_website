@@ -2,7 +2,8 @@
 :root {
   --clr-background: #fcedd7;
   --clr-foreground: #ffffff;
-  --clr-bubbles: #4773ad;
+  --clr-bubbles: #034aa7;
+  --clr-bubbles-text: #fcedd7;
   --clr-txt: #034aa7;
   --clr-form: white;
 }
@@ -10,7 +11,8 @@
 .darkmode {
   --clr-background: #1a1b1f;
   --clr-foreground: #1d323a;
-  --clr-bubbles: #275d72;
+  --clr-bubbles: #fcedd7;
+  --clr-bubbles-text: #1d323a;
   --clr-txt: #fcedd7;
   --clr-form: #fcedd7;
 }
@@ -240,8 +242,8 @@ img {
 .skill-list p {
   background-color: var(--clr-bubbles);
   padding: 0.5rem 1rem;
-  border-radius: 20px;
-  color: white;
+  border-radius: 5px;
+  color: var(--clr-bubbles-text);
 }
 
 .bubbles-container {
