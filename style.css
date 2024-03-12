@@ -13,7 +13,6 @@
   --clr-bubbles: #275d72;
   --clr-txt: #fcedd7;
   --clr-form: #fcedd7;
-
 }
 
 * {
@@ -39,12 +38,11 @@ a {
 /* NAVBAR */
 
 header {
-    background-color: var(--clr-background);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     text-decoration: none;
-    gap: 1rem;
+    gap: 2rem;
     padding: 2rem 0;
     border-bottom: 2px dashed var(--clr-txt);
     margin-bottom: 2rem;
@@ -52,8 +50,23 @@ header {
 }
 
 #logo {
-    padding: 0 2rem 0 2rem;
+    margin: 0 0 0 1rem;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 507px) {
+  #logo {
+    font-size: 1.25rem;
+    padding: 0;
+  }
+
+  .navlist {
+    margin: 0;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .navlist {
@@ -62,6 +75,7 @@ header {
     gap: 1.5rem;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   li {
@@ -80,9 +94,8 @@ h2 {
 }
 
 section {
-    padding: 0 4rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -91,18 +104,18 @@ section {
 #aboutCard {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
     margin: 2rem 0 4rem 0;
 }
 
 #aboutCard > * {
-    flex: 1;
     max-width: 500px;
 }
 
 #profilePic {
-    max-width: 400px;
+    max-width: 100%;
     border-radius: 0 50% 50% 50%;
     box-shadow: #0000007e 10px 10px 10px;
 }
@@ -111,7 +124,7 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 2rem;
+    margin: 0 1rem;
 }
 
 /* SKILLS SECTION */
@@ -240,10 +253,15 @@ input[type=text], input[type=email], textarea {
     background-color: var(--clr-form);
   }
 
-  label {
-    color: var(--clr-txt);
-    padding: 1rem 1rem 1rem 0;
-    display: inline-block;
+textarea:focus, input:focus {
+  outline: none !important;
+  border:2px solid var(--clr-txt);
+}
+
+label {
+  color: var(--clr-txt);
+  padding: 1rem 1rem 1rem 0;
+  display: inline-block;
 }
 
 input[type=submit] {
@@ -257,13 +275,13 @@ input[type=submit] {
     margin: 1rem 0;
   }
 
-  input[type=submit]:active {
-    background-color: var(--clr-background);
-  }
+input[type=submit]:active {
+  background-color: var(--clr-background);
+}
 
-  .skillsIcons > li:hover {
-    transition: 0.5s;
-    transform: scale(1.25);
+.skillsIcons > li:hover {
+  transition: 0.5s;
+  transform: scale(1.25);
 }
 
 /* FOOTER */
